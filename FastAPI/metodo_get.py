@@ -34,13 +34,13 @@ async def users_class():
 # Usando el Path
 @app.get("/users/{id}")
 async def user(id:int):
-    search_user(id)
+    return search_user(id)
     
 
 # Con Query
 @app.get("/usersquery/")
 async def user(id:int):
-    search_user(id)
+    return search_user(id)
 
 # Función para buscar usuario
 def search_user(id:int):
